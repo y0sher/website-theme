@@ -1,0 +1,297 @@
+body,
+h1, h2, h3, h4, h5, h6,
+p, a,
+.main-nav,
+.subscribe-button,
+.page-title,
+.post-meta,
+.read-next-story .post:before,
+.pagination,
+.site-footer {
+    font-family: "Quicksand", sans-serif;
+    opacity: 1.0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+a {
+  color: black;
+  opacity: 1.0;
+}
+
+.disqus_area {
+  max-width:1024px;
+  margin: auto;
+}
+
+
+
+/* This is necessary to not mess up share icons at bottom of posts */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "casper-icons", "Open Sans", sans-serif;
+}
+
+.site-static-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vw 4vw;
+  text-align: center;
+}
+
+.site-header-content .author-meta {
+  font-style: normal;
+  font-family: "Quicksand", sans-serif;
+  opacity: 1.0;
+  font-size: 12px;
+}
+
+.author-meta {
+  color: black;
+}
+
+.site-nav {
+  width: 100%;
+  top: 0;
+}
+
+@media (min-width: 900px) {
+    .home-template .post-feed,
+    .tag-template .post-feed,
+    .author-template .post-feed {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .home-template .site-nav {
+        top: 0;
+    }
+}
+
+.site-nav-left {
+  align-items: flex-start;
+  padding-bottom: 0;
+  height: 40px;
+}
+
+.site-nav-logo {
+  padding: 0;
+}
+
+.site-nav-logo img {
+   height: 40px;
+}
+
+.site-footer-content, .site-footer-content a {
+    color: black;
+    font-weight: bold;
+}
+
+.subscribe-form button {
+     background: #00c28c;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.site-footer-content a:hover, .nav li a:hover, a:hover {
+    color: #00c28c;
+    text-decoration:none;
+}
+
+.post-full-header {
+  padding-top: 10px;
+}
+
+.post-full-meta-date {
+    color: #00c28c;
+}
+
+
+
+.subscribe-button, .nav li a, .social-link {
+    color: black;
+    font-weight: bold;
+}
+
+.social-link svg {
+  fill: black;
+}
+
+.social-link-wb svg path {
+  stroke: black;
+}
+
+.nav {
+  flex-wrap: nowrap;
+}
+.site-header, .site-footer {
+    color: #00c28c;
+}
+
+.site-footer, .site-header, .site-header:after, .site-header:before {
+    background: white;
+}
+
+.site-header-content {
+    max-height: 300px;
+    padding: 0;
+}
+
+.site-logo {
+  max-height: 140px;
+}
+
+.site-title {
+    color: black;
+}
+
+.subscribe-overlay button {
+  background: #00c28c;
+}
+
+.site-description {
+    opacity: 1.0;
+    color: black;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.author-card-button {
+  border-radius: 5px;
+}
+
+.author-card-button:hover {
+  border-color: #00c28c;
+  color:  #00c28c;
+}
+
+.static-page-content {
+  font-size: 24px;
+  padding: 20px;
+  margin: auto;
+  max-width: 1040px;
+}
+
+@media (max-width: 800px) {
+  .static-page-content {
+    padding: 12px;
+  }
+}
+
+.text-container {
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.static-page-content p {
+  margin-top: 12px;
+}
+
+.btn-info {
+    background-color: #00c28c;
+    border-color: #00c28c;
+    color: #ffffff;
+    font-size: 1.9rem;
+}
+
+.btn-info:hover {
+    background-color:#007655;
+    border-color:#007655;
+}
+
+pre {
+    word-wrap: normal;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+    color: #333;
+  }
+  pre code, pre tt {
+    white-space: pre;
+  }
+
+
+.site-header-content .author-profile-image {
+  z-index: 11;
+}
+
+.site-main {
+       padding-top: 80px;
+   }
+
+.site-nav-left {
+      overflow-x: hidden;
+  }
+
+.site-header {
+     	width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 1001;
+}
+
+.floating-header {
+  display: none;
+}
+
+.site-header:after {
+  height: auto;
+}
+
+.header-border {
+  border-bottom: solid 1px;
+}
+
+.feature-subtitle {
+  color: #00c28c !important;
+}
+
+.text-info {
+  color: #00c28c !important;
+}
+
+.text-primary {
+  color: #00c28c !important;
+}
+
+.post-full-content,
+.post-full-content table,
+.mbr-section-subtitle,
+.site-header-content
+.author-meta,
+.subscribe-overlay-description,
+.post-card-excerpt {
+    font-family: "Quicksand", sans-serif;
+}
+
+.post-full-content h1,
+.post-full-content h2,
+.post-full-content h3,
+.post-full-content h4,
+.post-full-content h5,
+.post-full-content h6 {
+    color: color(var(--darkgrey) l(-5%));
+    font-family: "Quicksand", sans-serif;
+}

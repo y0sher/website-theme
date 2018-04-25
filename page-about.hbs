@@ -1,0 +1,61 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+<header class="site-header outer">
+    <div class="inner">
+        {{> "site-nav"}}
+    </div>
+</header>
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="static-page-content">
+      <h1>Introducting Spacemesh</h1>
+      <h2>Blockmesh OS</h2>
+      <p>Spacemesh is a blockchain operating system designed to run general-purpose smart contracts at web-scale.  It is powered by a novel consensus protocol that is secure, proof of work free and highly incentive-compatible.</p>
+      <p>Spacemesh is designed to create a highly-decentralized p2p blockchain computer formed by individuals from around the globe running Spacemesh on their desktop PCs at home.</p>
+      <p>Spacemesh is as a free open source software that aims to become a core Internet protocol for blockchain computation.</p>
+
+      <a class="btn btn-lg btn-info" href="https://github.com/spacemeshos/go-spacemesh" target="_blank">GITHUB</a>
+      &nbsp;&nbsp;
+      <a class="btn btn-lg btn-info" href="https://gitter.im/spacemesh-os/Lobby" target="_blank">GITTER</a>
+    </div>
+    <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "{{url absolute="true"}}";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "ghost-{{comment_id}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://spacemesh-2.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</main>
+
+{{/post}}
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+<script>
+$(function() {
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+});
+</script>
+{{/contentFor}}
